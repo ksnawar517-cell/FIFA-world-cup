@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA World Cup Information</title>
+    <style>
+        :root {
+            --primary-color: #0b4f3b;
+            --secondary-color: #e4aa23;
+            --dark-color: #1a1a1a;
+            --light-color: #f7f9f8;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #062b20 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            margin: 1rem 0 0 0;
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--primary-color);
+        }
+
+        .card h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .highlight-box {
+            background-color: #e6f0ec;
+            border-left: 5px solid var(--primary-color);
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin-bottom: 3rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f5f4;
+        }
+
+        tr:hover {
+            background-color: #eaf1ee;
+        }
+
+        footer {
+            background-color: var(--dark-color);
+            color: #888888;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FIFA World Cup</h1>
+        <p>The Ultimate Pinnacle of International Football</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="highlight-box">
+            <h2>The 2026 Era</h2>
+            <p>The 2026 FIFA World Cup marks a historic milestone as the largest tournament ever hosted. Jointly organized across 16 cities in Canada, Mexico, and the United States from June 11 to July 19, 2026, the tournament features an expanded field of <strong>48 national teams</strong> playing a total of 104 matches.</p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h2>Tournament History</h2>
+                <p>Inaugurated in 1930, the FIFA World Cup has been held every four years, with exceptions in 1942 and 1946 due to World War II. It brings together national teams from every continent to compete for the prestigious gold trophy.</p>
+            </div>
+            
+            <div class="card">
+                <h2>The Format</h2>
+                <p>Teams qualify through rigorous continental tournaments organized by FIFA's six confederations. In the final tournament, teams are divided into groups for a round-robin stage, with the top contenders advancing to a high-stakes, single-elimination knockout bracket.</p>
+            </div>
+        </div>
+
+        <h2>Most Successful Nations</h2>
+        <p>A look at the countries that have dominated the tournament since its inception in 1930:</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>World Cup Titles</th>
+                    <th>Winning Years</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Brazil</strong></td>
+                    <td>5</td>
+                    <td>1958, 1962, 1970, 1994, 2002</td>
+                </tr>
+                <tr>
+                    <td><strong>Germany / West Germany</strong></td>
+                    <td>4</td>
+                    <td>1954, 1974, 1990, 2014</td>
+                </tr>
+                <tr>
+                    <td><strong>Italy</strong></td>
+                    <td>4</td>
+                    <td>1934, 1938, 1982, 2006</td>
+                </tr>
+                <tr>
+                    <td><strong>Argentina</strong></td>
+                    <td>3</td>
+                    <td>1978, 1986, 2022</td>
+                </tr>
+                <tr>
+                    <td><strong>France</strong></td>
+                    <td>2</td>
+                    <td>1998, 2018</td>
+                </tr>
+                <tr>
+                    <td><strong>Uruguay</strong></td>
+                    <td>2</td>
+                    <td>1930, 1950</td>
+                </tr>
+                <tr>
+                    <td><strong>England</strong></td>
+                    <td>1</td>
+                    <td>1966</td>
+                </tr>
+                <tr>
+                    <td><strong>Spain</strong></td>
+                    <td>1</td>
+                    <td>2010</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="card" style="margin-top: 3rem;">
+            <h2>Quick Tournament Facts</h2>
+            <ul>
+                <li><strong>First Goalscorer:</strong> Lucien Laurent of France (1930).</li>
+                <li><strong>All-Time Top Scorer:</strong> Miroslav Klose of Germany with 16 goals.</li>
+                <li><strong>Most Attended:</strong> The 1994 tournament held in the United States still holds the record for highest overall attendance.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 FIFA World Cup Fan Guide. All tournament data sourced for educational reference.</p>
+    </footer>
+
+</body>
+</html>
